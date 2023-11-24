@@ -69,9 +69,9 @@
   --trevlo-font2: "Urbanist", sans-serif;
   --trevlo-font3: "Manrope", sans-serif;
   --trevlo-special-font: "Covered By Your Grace", cursive;
-  --trevlo-base: #ff5956;
+  --trevlo-base: #f5b05b;
   --trevlo-base-rgb: 255, 89, 86;
-  --trevlo-primary: #2d2330;
+  --trevlo-primary: #2a3362;
   --trevlo-primary-rgb: 45, 35, 48;
   --trevlo-secondary: #736d75;
   --trevlo-secondary-rgb: 115, 109, 117;
@@ -4182,6 +4182,7 @@ path {
 .topbar-one .container-fluid {
   padding-left: 50px;
   padding-right: 60px;
+  background-color: var(--trevlo-primary);
 }
 .topbar-one__inner {
   display: flex;
@@ -4288,7 +4289,7 @@ path {
   content: "";
   width: 418px;
   height: 100%;
-  background-color: var(--trevlo-base, #ff5956);
+
   position: absolute;
   top: 0;
   right: 0;
@@ -4322,10 +4323,6 @@ path {
   justify-content: space-between;
 }
 @media (max-width: 1199px) {
-  .main-header__inner {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 .main-header__left {
   display: flex;
@@ -4350,8 +4347,9 @@ path {
   }
 }
 .main-header__logo img {
-  max-width: 100%;
+  width: 60px;
   height: auto;
+  padding: 10px 0 10px 0;
 }
 .main-header__right {
   display: flex;
@@ -4450,13 +4448,13 @@ path {
   font-size: var(--trevlo-size-lg, 13px);
   line-height: 1;
   font-weight: 400;
-  color: var(--trevlo-white, #ffffff);
+
   margin-bottom: 5px;
 }
 .main-header__phone-number {
   font-size: var(--trevlo-size-3xl, 18px);
   line-height: 1;
-  color: var(--trevlo-white, #ffffff);
+
   margin-bottom: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -4465,6 +4463,7 @@ path {
   background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px
     95%/0px 1px no-repeat;
   transition: all 500ms ease;
+  color: var(--trevlo-primary);
 }
 .main-header__phone-number a:hover {
   background-size: 100% 1px;
@@ -4530,7 +4529,7 @@ path {
 .main-header__user,
 .main-header__search {
   font-size: 20px;
-  color: var(--trevlo-white, #ffffff);
+
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1399px) {
@@ -4734,7 +4733,6 @@ path {
 .mobile-nav__btn:hover span {
   background-color: var(--trevlo-base, #ff5956);
 }
-
 
 .main-menu .main-menu__list,
 .main-menu .main-menu__list ul {
@@ -13003,6 +13001,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .main-footer__logo {
   max-width: 100%;
+  height: auto;
 }
 .main-footer__social {
   margin: 0;
