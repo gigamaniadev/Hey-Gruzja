@@ -4274,7 +4274,7 @@ path {
   transition: all 500ms ease;
 }
 .topbar-one__social-link:hover {
-  color: var(--trevlo-primary, #2d2330);
+  color: var(--trevlo-base);
 }
 
 /*--------------------------------------------------------------
