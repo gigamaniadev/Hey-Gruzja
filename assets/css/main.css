@@ -10298,6 +10298,7 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-right: auto;
   padding: 30px 45px 60px 79px;
   border-radius: 10px;
+  margin-bottom: 200px;
 }
 @media (max-width: 1199px) {
   .contact-page__info-row {
