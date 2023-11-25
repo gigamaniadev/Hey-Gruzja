@@ -31,23 +31,23 @@
   }
 
   // Date Picker
-  if ($(".trevlo-datepicker").length) {
-    $(".trevlo-datepicker").each(function () {
+  if ($(".heygruzja-datepicker").length) {
+    $(".heygruzja-datepicker").each(function () {
       $(this).datepicker();
     });
   }
   // Multi Date Picker
-  if ($(".trevlo-multi-datepicker").length) {
-    $(".trevlo-multi-datepicker").each(function () {
+  if ($(".heygruzja-multi-datepicker").length) {
+    $(".heygruzja-multi-datepicker").each(function () {
       let self = $(this);
       self.daterangepicker({
-        autoUpdateInput: false
+        autoUpdateInput: false,
       });
       self.on("apply.daterangepicker", function (ev, picker) {
         $(this).val(
           picker.startDate.format("D MMM YY") +
-          " - " +
-          picker.endDate.format("D MMM YY")
+            " - " +
+            picker.endDate.format("D MMM YY")
         );
       });
     });
@@ -60,8 +60,9 @@
         var el = $(this);
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
-      }, {
-        accY: -50
+      },
+      {
+        accY: -50,
       }
     );
   }
@@ -77,22 +78,26 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
-            countNum: $t.find(".count-text").text()
-          }).animate({
-            countNum: n
-          }, {
-            duration: r,
-            easing: "linear",
-            step: function () {
-              $t.find(".count-text").text(Math.floor(this.countNum));
+            countNum: $t.find(".count-text").text(),
+          }).animate(
+            {
+              countNum: n,
             },
-            complete: function () {
-              $t.find(".count-text").text(this.countNum);
+            {
+              duration: r,
+              easing: "linear",
+              step: function () {
+                $t.find(".count-text").text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $t.find(".count-text").text(this.countNum);
+              },
             }
-          });
+          );
         }
-      }, {
-        accY: 0
+      },
+      {
+        accY: 0,
       }
     );
   }
@@ -141,18 +146,18 @@
       // initialize the plugin
       rules: {
         name: {
-          required: true
+          required: true,
         },
         email: {
           required: true,
-          email: true
+          email: true,
         },
         message: {
-          required: true
+          required: true,
         },
         subject: {
-          required: true
-        }
+          required: true,
+        },
       },
       submitHandler: function (form) {
         // sending value with ajax request
@@ -167,7 +172,7 @@
           }
         );
         return false;
-      }
+      },
     });
   }
 
@@ -201,7 +206,7 @@
 
             mcResp.find("p").fadeOut(10000);
           }
-        }
+        },
       });
     });
   }
@@ -213,7 +218,7 @@
       removalDelay: 160,
       preloader: true,
 
-      fixedContentPos: false
+      fixedContentPos: false,
     });
   }
 
@@ -235,21 +240,20 @@
         closeOnContentClick: true,
         closeBtnInside: false,
         gallery: {
-          enabled: true
-        }
+          enabled: true,
+        },
       });
     });
   }
 
-  let trevloImagePopupGallery = $(".trevlo-image-popup");
-  trevloImagePopupGallery.each(function () {
+  let heygruzjaImagePopupGallery = $(".heygruzja-image-popup");
+  heygruzjaImagePopupGallery.each(function () {
     let elm = $(this);
     let options = elm.data("gallery-options");
     let imageGallery = elm.magnificPopup(
       "object" === typeof options ? options : JSON.parse(options)
     );
   });
-
 
   function dynamicCurrentMenuClass(selector) {
     let FileName = window.location.href.split("/").reverse()[0];
@@ -370,32 +374,32 @@
       boxClass: "wow", // animated element css class (default is wow)
       animateClass: "animated", // animation css class (default is animated)
       mobile: true, // trigger animations on mobile devices (default is true)
-      live: true // act on asynchronously loaded content (default is true)
+      live: true, // act on asynchronously loaded content (default is true)
     });
     wow.init();
   }
 
   /*-- Hover Tilt --*/
-  let trevloTiltElm = $(".trevlo-tilt");
-  if (trevloTiltElm.length) {
-    trevloTiltElm.each(function () {
+  let heygruzjaTiltElm = $(".heygruzja-tilt");
+  if (heygruzjaTiltElm.length) {
+    heygruzjaTiltElm.each(function () {
       let self = $(this);
       let options = self.data("tilt-options");
-      let trevloTilt = self.tilt(
+      let heygruzjaTilt = self.tilt(
         "object" === typeof options ? options : JSON.parse(options)
       );
     });
   }
 
-  function trevloPara() {
-    let trevloParaElm = $(".trevlo-splax");
-    if (trevloParaElm.length) {
-      trevloParaElm.each(function () {
+  function heygruzjaPara() {
+    let heygruzjaParaElm = $(".heygruzja-splax");
+    if (heygruzjaParaElm.length) {
+      heygruzjaParaElm.each(function () {
         let self = $(this);
         let className = self.attr("class");
         var image = document.getElementsByClassName(className);
         let options = self.data("para-options");
-        let trevloPara = new simpleParallax(
+        let heygruzjaPara = new simpleParallax(
           image,
           "object" === typeof options ? options : JSON.parse(options)
         );
@@ -417,8 +421,8 @@
   }
 
   //accrodion
-  if ($(".trevlo-accrodion").length) {
-    var accrodionGrp = $(".trevlo-accrodion");
+  if ($(".heygruzja-accrodion").length) {
+    var accrodionGrp = $(".heygruzja-accrodion");
     accrodionGrp.each(function () {
       var accrodionName = $(this).data("grp-name");
       var Self = $(this);
@@ -431,10 +435,10 @@
           .find(".accrodion-title")
           .on("click", function () {
             if ($(this).parent().hasClass("active") === false) {
-              $(".trevlo-accrodion." + accrodionName)
+              $(".heygruzja-accrodion." + accrodionName)
                 .find(".accrodion")
                 .removeClass("active");
-              $(".trevlo-accrodion." + accrodionName)
+              $(".heygruzja-accrodion." + accrodionName)
                 .find(".accrodion")
                 .find(".accrodion-content")
                 .slideUp();
@@ -459,8 +463,8 @@
     if ($(this).next().val() > 0) {
       if ($(this).next().val() > 0)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -504,8 +508,8 @@
       connect: true,
       range: {
         min: 50,
-        max: 100
-      }
+        max: 100,
+      },
     });
 
     var limitFieldMin = document.getElementById("min-value-rangeslider");
@@ -518,9 +522,9 @@
 
   function thmOwlInit() {
     // owl slider
-    let trevloowlCarousel = $(".trevlo-owl__carousel");
-    if (trevloowlCarousel.length) {
-      trevloowlCarousel.each(function () {
+    let heygruzjaowlCarousel = $(".heygruzja-owl__carousel");
+    if (heygruzjaowlCarousel.length) {
+      heygruzjaowlCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
@@ -531,9 +535,9 @@
         });
       });
     }
-    let trevloowlCarouselNav = $(".trevlo-owl__carousel--custom-nav");
-    if (trevloowlCarouselNav.length) {
-      trevloowlCarouselNav.each(function () {
+    let heygruzjaowlCarouselNav = $(".heygruzja-owl__carousel--custom-nav");
+    if (heygruzjaowlCarouselNav.length) {
+      heygruzjaowlCarouselNav.each(function () {
         let elm = $(this);
         let owlNavPrev = elm.data("owl-nav-prev");
         let owlNavNext = elm.data("owl-nav-next");
@@ -583,8 +587,9 @@
         var target = $(this);
         $("html, body")
           .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          .animate(
+            {
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             900,
             "easeInOutExpo"
@@ -660,9 +665,9 @@
   stickyMenuUpScroll($(".sticky-header--normal"), "active");
 
   //Strech Column
-  function trevlo_stretch() {
+  function heygruzja_stretch() {
     var i = $(window).width();
-    $(".row .trevlo-stretch-element-inside-column").each(function () {
+    $(".row .heygruzja-stretch-element-inside-column").each(function () {
       var $this = $(this),
         row = $this.closest(".row"),
         cols = $this.closest('[class^="col-"]'),
@@ -678,7 +683,7 @@
         f = i - s.right,
         styles = {
           "margin-left": 0,
-          "margin-right": 0
+          "margin-right": 0,
         };
       if (Math.round(c) === Math.round(p)) {
         var h = parseFloat($this.css("margin-left") || 0);
@@ -691,9 +696,9 @@
       $this.css(styles);
     });
   }
-  trevlo_stretch();
+  heygruzja_stretch();
 
-  function trevlo_cuved_circle() {
+  function heygruzja_cuved_circle() {
     let circleTypeElm = $(".curved-circle--item");
     if (circleTypeElm.length) {
       circleTypeElm.each(function () {
@@ -706,40 +711,51 @@
     }
   }
 
-  let reviewStarElm = $(".trevlo-ratings-two");
+  let reviewStarElm = $(".heygruzja-ratings-two");
   if (reviewStarElm.length) {
-    reviewStarElm.find('i').on('mouseover', function () {
-      var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+    reviewStarElm
+      .find("i")
+      .on("mouseover", function () {
+        var onStar = parseInt($(this).data("value"), 10); // The star currently mouse on
 
-      // Now highlight all the stars that's not after the current hovered star
-      $(this).parent().children('i').each(function (e) {
-        if (e < onStar) {
-          $(this).addClass('hover');
-        } else {
-          $(this).removeClass('hover');
-        }
+        // Now highlight all the stars that's not after the current hovered star
+        $(this)
+          .parent()
+          .children("i")
+          .each(function (e) {
+            if (e < onStar) {
+              $(this).addClass("hover");
+            } else {
+              $(this).removeClass("hover");
+            }
+          });
+      })
+      .on("mouseout", function () {
+        $(this)
+          .parent()
+          .children("i")
+          .each(function (e) {
+            $(this).removeClass("hover");
+          });
       });
 
-    }).on('mouseout', function () {
-      $(this).parent().children('i').each(function (e) {
-        $(this).removeClass('hover');
-      });
-    });
-
-    reviewStarElm.find('i').on('click', function () {
-      var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-      var stars = $(this).parent().children('i');
+    reviewStarElm.find("i").on("click", function () {
+      var onStar = parseInt($(this).data("value"), 10); // The star currently selected
+      var stars = $(this).parent().children("i");
 
       for (let i = 0; i < stars.length; i++) {
-        $(stars[i]).removeClass('active');
+        $(stars[i]).removeClass("active");
       }
 
       for (let i = 0; i < onStar; i++) {
-        $(stars[i]).addClass('active');
+        $(stars[i]).addClass("active");
       }
 
       // JUST RESPONSE (Not needed)
-      var ratingValue = parseInt(reviewStarElm.find('i.active').last().data('value'), 10);
+      var ratingValue = parseInt(
+        reviewStarElm.find("i.active").last().data("value"),
+        10
+      );
       var msg = 0;
       if (ratingValue > 1) {
         msg = ratingValue;
@@ -747,10 +763,8 @@
         msg = ratingValue;
       }
 
-      reviewStarElm.find('input[name=rating]').val(msg);
-
+      reviewStarElm.find("input[name=rating]").val(msg);
     });
-
   }
 
   /*-- Price Range --*/
@@ -764,7 +778,7 @@
         slide: function (event, ui) {
           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
-        }
+        },
       });
       $(".price-ranger .ranger-min-max-block .min").val(
         "$" + $(".price-ranger #slider-range").slider("values", 0)
@@ -780,20 +794,32 @@
         max: 999,
         values: [0, 999],
         slide: function (event, ui) {
-          $("#slider-ranger span.ui-slider-handle").eq(0).html("<span>" + "$" + ui.values[0] + "</span>");
-          $("#slider-ranger span.ui-slider-handle").eq(1).html("<span>" + "$" + ui.values[1] + "</span>");
-        }
+          $("#slider-ranger span.ui-slider-handle")
+            .eq(0)
+            .html("<span>" + "$" + ui.values[0] + "</span>");
+          $("#slider-ranger span.ui-slider-handle")
+            .eq(1)
+            .html("<span>" + "$" + ui.values[1] + "</span>");
+        },
       });
-      $("#slider-ranger span.ui-slider-handle").eq(0).html("<span>" + "$" + $("#slider-ranger").slider("values", 0) + "</span>");
-      $("#slider-ranger span.ui-slider-handle").eq(1).html("<span>" + "$" + $("#slider-ranger").slider("values", 1) + "</span>");
+      $("#slider-ranger span.ui-slider-handle")
+        .eq(0)
+        .html(
+          "<span>" + "$" + $("#slider-ranger").slider("values", 0) + "</span>"
+        );
+      $("#slider-ranger span.ui-slider-handle")
+        .eq(1)
+        .html(
+          "<span>" + "$" + $("#slider-ranger").slider("values", 1) + "</span>"
+        );
     }
   }
 
   // filter toggler
-  $('.banner-form__filter').on('click', function (e) {
+  $(".banner-form__filter").on("click", function (e) {
     e.preventDefault();
-    $('.banner-form__popup').slideToggle();
-    $(this).toggleClass('active');
+    $(".banner-form__popup").slideToggle();
+    $(this).toggleClass("active");
   });
 
   // window load event
@@ -805,7 +831,7 @@
     thmOwlInit();
     thmTinyInit();
     priceFilter();
-    trevloPara();
+    heygruzjaPara();
 
     if ($(".circle-progress").length) {
       $(".circle-progress").appear(function () {
@@ -820,14 +846,14 @@
     if ($(".masonry-layout").length) {
       $(".masonry-layout").imagesLoaded(function () {
         $(".masonry-layout").isotope({
-          layoutMode: "masonry"
+          layoutMode: "masonry",
         });
       });
     }
     if ($(".fitRow-layout").length) {
       $(".fitRow-layout").imagesLoaded(function () {
         $(".fitRow-layout").isotope({
-          layoutMode: "fitRows"
+          layoutMode: "fitRows",
         });
       });
     }
@@ -840,8 +866,8 @@
         animationOptions: {
           duration: 500,
           easing: "linear",
-          queue: false
-        }
+          queue: false,
+        },
       });
       // on click filter links
       postFilterList.on("click", function () {
@@ -855,8 +881,8 @@
           animationOptions: {
             duration: 500,
             easing: "linear",
-            queue: false
-          }
+            queue: false,
+          },
         });
         return false;
       });
@@ -876,7 +902,7 @@
       });
     }
 
-    trevlo_cuved_circle();
+    heygruzja_cuved_circle();
   });
 
   $(window).on("scroll", function () {
@@ -903,6 +929,6 @@
   });
 
   $(window).on("resize", function () {
-    trevlo_stretch();
+    heygruzja_stretch();
   });
 })(jQuery);
