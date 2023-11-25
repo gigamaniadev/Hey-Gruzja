@@ -5770,7 +5770,7 @@ body.megamenu-popup-active .mobile-nav__content {
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
   background-image: url(../images/backgrounds/page-header-bg.jpg);
   opacity: 0.4;
