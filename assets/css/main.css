@@ -4341,11 +4341,7 @@ path {
     margin-left: 0;
   }
 }
-@media (max-width: 575px) {
-  .main-header__right-right {
-    display: none;
-  }
-}
+
 .main-header__phone {
   display: flex;
   align-items: center;
@@ -8300,18 +8296,18 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .cta-two {
   position: relative;
-  background-color: var(--heygruzja-base, #ff5956);
+
   padding: 76px 0 84px;
 }
 .cta-two__sub-title {
-  color: var(--heygruzja-white2, #faf5ee);
+  color: var(--heygruzja-primary, #faf5ee);
   font-family: var(--heygruzja-special-font, "Covered By Your Grace", cursive);
   font-size: 30px;
   font-weight: 400;
   margin: 0 0 3px;
 }
 .cta-two__title {
-  color: var(--heygruzja-white2, #faf5ee);
+  color: var(--heygruzja-primary, #faf5ee);
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -8332,7 +8328,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .cta-two .heygruzja-btn::after {
-  background-color: var(--heygruzja-white, #ffffff);
+  background-color: var(--heygruzja-base);
 }
 
 .cta-three {
@@ -14847,6 +14843,7 @@ body.boxed-wrapper .main-header__booking-btn {
   position: relative;
   text-align: center;
   z-index: 1;
+  top: 40px;
 }
 .video-one .video-popup {
   width: 89px;
@@ -14911,7 +14908,7 @@ body.boxed-wrapper .main-header__booking-btn {
   position: relative;
   background-color: var(--heygruzja-white2, #faf5ee);
   max-width: 1392px;
-  margin: -82px auto 120px;
+  margin: -40px auto 80px;
   border-radius: 30px;
   z-index: 1;
   padding: 120px 0;
