@@ -101,7 +101,7 @@
     <div class="preloader">
       <div
         class="preloader__image"
-        style="background-image: url(assets/images/logo.svg)"
+        style="background-image: url(assets/images/loader.png)"
       ></div>
     </div>
     <!-- /.preloader -->
@@ -114,7 +114,7 @@
                 <li class="topbar-one__info-item">
                   <span class="topbar-one__info-icon icon-location-1"></span>
                   <span class="topbar-one__info-text"
-                    >30 Commercial Road Fratton, Poland</span
+                    >30 Commercial Road Fratton, Australia</span
                   >
                 </li>
                 <li class="topbar-one__info-item">
@@ -122,7 +122,7 @@
                   <a
                     href="mailto:needhelp@company.com"
                     class="topbar-one__info-text"
-                    >heygruzja@gmail.com</a
+                    >needhelp@company.com</a
                   >
                 </li>
               </ul>
@@ -181,13 +181,17 @@
             <div class="main-header__left">
               <div class="main-header__logo">
                 <a href="index.html">
-                  <img src="assets/images/logo.svg" alt="heygruzja HTML" />
+                  <img
+                    src="assets/images/logo.svg"
+                    alt="heygruzja HTML"
+                    width="146"
+                  />
                 </a>
               </div>
               <!-- /.main-header__logo -->
               <nav class="main-header__nav main-menu">
                 <ul class="main-menu__list">
-                  <li class="current">
+                  <li class="">
                     <a href="index.html">Home</a>
                   </li>
 
@@ -195,7 +199,7 @@
                     <a href="about.html">About</a>
                   </li>
 
-                  <li class="">
+                  <li class="current">
                     <a href="tours.html">Offers</a>
                   </li>
 
@@ -228,7 +232,7 @@
                   <div class="main-header__phone-text">
                     <p class="main-header__phone-title">Call Anytime</p>
                     <h4 class="main-header__phone-number">
-                      <a href="tel:(303)555-0105">(303) 500 000 00</a>
+                      <a href="tel:(303)555-0105">(303) 555-0105</a>
                     </h4>
                   </div>
                 </div>
@@ -257,103 +261,33 @@
         <!-- /.container-fluid -->
       </header>
       <!-- /.main-header -->
-      <!-- main-slider-start -->
-      <section class="main-slider-one">
-        <div
-          class="main-slider-one__carousel heygruzja-owl__carousel owl-carousel owl-theme"
-          data-owl-options='{
-		"items": 1,
-		"margin": 0,
-		"loop": true,
-		"smartSpeed": 700,
-		"animateOut": "fadeOut",
-		"autoplayTimeout": 5000, 
-		"nav": true,
-		"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-		"dots": false,
-		"autoplay": true
-		}'
-        >
-          <div class="item">
-            <div
-              class="main-slider-one__image"
-              style="
-                background-image: url(assets/images/backgrounds/slider-1-1.jpg);
-              "
-            ></div>
-            <div class="container">
-              <div class="main-slider-one__content">
-                <h5 class="main-slider-one__sub-title">
-                  Beauty & Discovery
-                  <img
-                    src="assets/images/shapes/slider-1-shape-1.png"
-                    alt="heygruzja"
-                  />
-                </h5>
-                <h3 class="main-slider-one__title">
-                  Explore Georgia
-                  <img
-                    src="assets/images/shapes/slider-1-shape-2.png"
-                    alt="heygruzja"
-                  />
-                </h3>
-              </div>
-            </div>
+
+      <section class="page-header">
+        <div class="page-header__bg"></div>
+        <!-- /.page-header__bg -->
+        <div class="container">
+          <h2
+            class="page-header__title wow animated fadeInLeft"
+            data-wow-delay="0s"
+            data-wow-duration="1500ms"
+          >
+            Tour Top Search
+          </h2>
+          <div class="page-header__breadcrumb-box">
+            <ul class="heygruzja-breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li>Tour List</li>
+            </ul>
+            <!-- /.heygruzja-breadcrumb -->
           </div>
-          <div class="item">
-            <div
-              class="main-slider-one__image"
-              style="
-                background-image: url(assets/images/backgrounds/slider-1-2.jpg);
-              "
-            ></div>
-            <div class="container">
-              <div class="main-slider-one__content">
-                <h5 class="main-slider-one__sub-title">
-                  Beauty & Discovery
-                  <img
-                    src="assets/images/shapes/slider-1-shape-1.png"
-                    alt="heygruzja"
-                  />
-                </h5>
-                <h3 class="main-slider-one__title">
-                  Explore Georgia
-                  <img
-                    src="assets/images/shapes/slider-1-shape-2.png"
-                    alt="heygruzja"
-                  />
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div
-              class="main-slider-one__image"
-              style="
-                background-image: url(assets/images/backgrounds/slider-1-3.jpg);
-              "
-            ></div>
-            <div class="container">
-              <div class="main-slider-one__content">
-                <h5 class="main-slider-one__sub-title">
-                  Beauty & Discovery
-                  <img
-                    src="assets/images/shapes/slider-1-shape-1.png"
-                    alt="heygruzja"
-                  />
-                </h5>
-                <h3 class="main-slider-one__title">
-                  Explore Georgia
-                  <img
-                    src="assets/images/shapes/slider-1-shape-2.png"
-                    alt="heygruzja"
-                  />
-                </h3>
-              </div>
-            </div>
-          </div>
+          <!-- /.page-header__breadcrumb-box -->
         </div>
-        <!-- banner-slider -->
+        <!-- /.container -->
+      </section>
+      <!-- /.page-header -->
+
+      <!-- Tour Search Page Start -->
+      <section class="tour-search">
         <div class="banner-form wow fadeInUp" data-wow-delay="300ms">
           <div class="container">
             <form class="banner-form__wrapper" action="search.html">
@@ -363,9 +297,13 @@
                     <label for="location">Location</label>
                     <select name="location" class="selectpicker" id="location">
                       <option value="select">Where to Next?</option>
-                      <option value="georgia">Georgia</option>
-                      <option value="azerbaijan">Azerbaijan</option>
-                      <option value="armenia">Armenia</option>
+                      <option value="spain">Spain</option>
+                      <option value="africa">Africa</option>
+                      <option value="europe">Europe</option>
+                      <option value="thailand">Thailand</option>
+                      <option value="dubai">Dubai</option>
+                      <option value="australia">Australia</option>
+                      <option value="swizerlan">Swizerlan</option>
                     </select>
                     <i class="icon-location-2"></i>
                   </div>
@@ -418,6 +356,9 @@
                 </div>
                 <div class="col-lg-1">
                   <div class="banner-form__btn">
+                    <div class="banner-form__filter">
+                      <span class="icon-filter"></span>
+                    </div>
                     <button
                       type="submit"
                       aria-label="search submit"
@@ -430,197 +371,118 @@
               </div>
             </form>
           </div>
+          <div class="banner-form__popup">
+            <div class="banner-form__popup__slider-wrapper">
+              <form action="#" method="get" class="clearfix">
+                <div id="slider-ranger"></div>
+              </form>
+            </div>
+            <h3 class="banner-form__popup__title">Language</h3>
+            <ul class="banner-form__popup__checkbox">
+              <li>
+                <input type="checkbox" name="english" id="english" />
+                <label for="english"><span></span>English</label>
+              </li>
+              <li>
+                <input type="checkbox" name="french" id="french" />
+                <label for="french"><span></span>French</label>
+              </li>
+              <li>
+                <input type="checkbox" name="german" id="german" />
+                <label for="german"><span></span>German</label>
+              </li>
+              <li>
+                <input type="checkbox" name="japanese" id="japanese" />
+                <label for="japanese"><span></span>Japanese</label>
+              </li>
+              <li>
+                <input type="checkbox" name="thailand" id="thailand" />
+                <label for="thailand"><span></span>Thailand</label>
+              </li>
+              <li>
+                <input type="checkbox" name="arabic" id="arabic" />
+                <label for="arabic"><span></span>Arabic</label>
+              </li>
+            </ul>
+            <h3 class="banner-form__popup__title">Amenities</h3>
+            <ul class="banner-form__popup__checkbox">
+              <li>
+                <input type="checkbox" name="Accepts" id="Accepts" />
+                <label for="Accepts"><span></span>Accepts Credit Cards</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Parking" id="Parking" />
+                <label for="Parking"><span></span>Car Parking</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Coupons" id="Coupons" />
+                <label for="Coupons"><span></span>Free Coupons</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Laundry" id="Laundry" />
+                <label for="Laundry"><span></span>Laundry Service</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Outdoor" id="Outdoor" />
+                <label for="Outdoor"><span></span>Outdoor Seating</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Reservations" id="Reservations" />
+                <label for="Reservations"><span></span>Reservations</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Restaurant" id="Restaurant" />
+                <label for="Restaurant"><span></span>Restaurant</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Smoking" id="Smoking" />
+                <label for="Smoking"><span></span>Smoking Allowed</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Internet" id="Internet" />
+                <label for="Internet"><span></span>Wireless Internet</label>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <!-- main-slider-end -->
+      <!-- Tour Search Page End -->
 
-      <!-- Destination Start -->
-      <section class="destination-one">
+      <!-- Tour Listing Search Page One Start -->
+      <section
+        class="tour-listing-search tour-listing-one tour-listing section-space-bottom"
+      >
         <div class="container">
-          <div class="destination-page__row row">
+          <div class="row">
+            <div class="col-12">
+              <div class="showing-result tour-listing-one__showing-result">
+                <div class="showing-result__info-top">
+                  <div class="showing-result__text-box">
+                    <h3 class="showing-result__text">
+                      Showing 1–9 of 12 Results
+                    </h3>
+                  </div>
+                  <div class="showing-result__sort">
+                    <select class="selectpicker" aria-label="Sort by popular">
+                      <option selected>Sort by popular</option>
+                      <option value="1">Sort by view</option>
+                      <option value="2">Sort by price</option>
+                      <option value="3">Sort by ratings</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- /.showing-result -->
+            </div>
+            <!-- /.col-12 -->
             <div
-              class="col-xl-6 col-md-8 wow animated fadeInUp"
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
               data-wow-delay="0.1s"
               data-wow-duration="1500ms"
             >
-              <div class="sec-title text-left">
-                <p class="sec-title__tagline">Destination list</p>
-                <!-- /.sec-title__tagline -->
-
-                <h2 class="sec-title__title">
-                  Explore the Beautiful Places Around the World
-                </h2>
-                <!-- /.sec-title__title -->
-              </div>
-              <!-- /.sec-title --><!-- /.sec-title -->
-            </div>
-
-            <!-- /.destination-one__card -->
-            <div
-              class="col-xl-6 col-lg-8 wow animated fadeInUp"
-              data-wow-delay="0.5s"
-              data-wow-duration="1500ms"
-            >
-              <div class="destination-one__card">
-                <div
-                  class="destination-one__card-img-box destination-one__card-img-box--round"
-                >
-                  <img
-                    src="assets/images/destination/destination-1-1.jpg"
-                    alt="destination"
-                    class="destination-one__card-img destination-one__card-img--round"
-                  />
-                  <div
-                    class="destination-one__card-overlay destination-one__card-overlay--round"
-                  >
-                    <div
-                      class="destination-one__card-content destination-one__card-content--round"
-                    >
-                      <a
-                        href="destination-details-right.html"
-                        class="destination-one__card-btn destination-one__card-btn--round heygruzja-btn heygruzja-btn--base heygruzja-btn--base-three"
-                        ><span>7 TOURS</span></a
-                      >
-                      <h4 class="destination-one__card-title">
-                        <a href="destination-details-right.html">Georgia</a>
-                      </h4>
-                    </div>
-                    <!-- /.destination-one__card-content destination-one__card-content--round -->
-                  </div>
-                  <!-- /.destination-one__card-overlay destination-one__card-overlay--round -->
-                </div>
-                <!-- /.destination-one__card-img-box -->
-              </div>
-              <!-- /.destination-one__card -->
-            </div>
-
-            <div
-              class="col-xl-6 col-lg-8 wow animated fadeInUp"
-              data-wow-delay="0.5s"
-              data-wow-duration="1500ms"
-            >
-              <div class="destination-one__card">
-                <div
-                  class="destination-one__card-img-box destination-one__card-img-box--round"
-                >
-                  <img
-                    src="assets/images/destination/destination-1-2.jpg"
-                    alt="destination"
-                    class="destination-one__card-img destination-one__card-img--round"
-                  />
-                  <div
-                    class="destination-one__card-overlay destination-one__card-overlay--round"
-                  >
-                    <div
-                      class="destination-one__card-content destination-one__card-content--round"
-                    >
-                      <a
-                        href="destination-details-right.html"
-                        class="destination-one__card-btn destination-one__card-btn--round heygruzja-btn heygruzja-btn--base heygruzja-btn--base-three"
-                        ><span>7 TOURS</span></a
-                      >
-                      <h4 class="destination-one__card-title">
-                        <a href="destination-details-right.html">Azerbaijan</a>
-                      </h4>
-                    </div>
-                    <!-- /.destination-one__card-content destination-one__card-content--round -->
-                  </div>
-                  <!-- /.destination-one__card-overlay destination-one__card-overlay--round -->
-                </div>
-                <!-- /.destination-one__card-img-box -->
-              </div>
-              <!-- /.destination-one__card -->
-            </div>
-
-            <div
-              class="col-xl-6 col-lg-8 wow animated fadeInUp"
-              data-wow-delay="0.5s"
-              data-wow-duration="1500ms"
-            >
-              <div class="destination-one__card">
-                <div
-                  class="destination-one__card-img-box destination-one__card-img-box--round"
-                >
-                  <img
-                    src="assets/images/destination/destination-1-3.jpg"
-                    alt="destination"
-                    class="destination-one__card-img destination-one__card-img--round"
-                  />
-                  <div
-                    class="destination-one__card-overlay destination-one__card-overlay--round"
-                  >
-                    <div
-                      class="destination-one__card-content destination-one__card-content--round"
-                    >
-                      <a
-                        href="destination-details-right.html"
-                        class="destination-one__card-btn destination-one__card-btn--round heygruzja-btn heygruzja-btn--base heygruzja-btn--base-three"
-                        ><span>7 TOURS</span></a
-                      >
-                      <h4 class="destination-one__card-title">
-                        <a href="destination-details-right.html">Armenia</a>
-                      </h4>
-                    </div>
-                    <!-- /.destination-one__card-content destination-one__card-content--round -->
-                  </div>
-                  <!-- /.destination-one__card-overlay destination-one__card-overlay--round -->
-                </div>
-                <!-- /.destination-one__card-img-box -->
-              </div>
-              <!-- /.destination-one__card -->
-            </div>
-
-            <!-- /.destination-one__card -->
-          </div>
-
-          <!-- /.row -->
-        </div>
-      </section>
-      <!-- Destination End -->
-
-      <!-- About End -->
-      <!-- Tour Listing One Start -->
-      <section
-        class="tour-listing-one"
-        style="background-image: url(assets/images/backgrounds/tour-bg-1.jpg)"
-      >
-        <div class="container">
-          <div class="sec-title text-center">
-            <p class="sec-title__tagline">Featured tours</p>
-            <!-- /.sec-title__tagline -->
-
-            <h2 class="sec-title__title">Most Favorite Tour Place</h2>
-            <!-- /.sec-title__title -->
-          </div>
-          <!-- /.sec-title --><!-- /.sec-title -->
-          <div
-            class="tour-listing-one__carousel heygruzja-owl__carousel heygruzja-owl__carousel--basic-nav heygruzja-owl__carousel--with-shadow owl-theme owl-carousel"
-            data-owl-options='{
-            "items": 3,
-            "margin": 30,
-            "smartSpeed": 700,
-            "loop":false,
-            "autoplay": 6000,
-            "nav":false,
-            "dots":true,
-            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-            "responsive":{
-                "0":{
-                    "items": 1
-                },
-                "768":{
-                    "items": 2
-                },
-                "1200":{
-                    "items": 3
-                }
-            }
-            }'
-          >
-            <div class="item">
               <div class="tour-listing__card">
                 <a
-                  href="offer-details.html"
+                  href="tour-listing-details-right.html"
                   class="tour-listing__card-image-box"
                 >
                   <img
@@ -652,27 +514,27 @@
                       href="javascript:void(0);"
                       class="tour-listing__card-camera-btn heygruzja-image-popup"
                       data-gallery-options='{
-                "items": [
-                  {
-                    "src": "assets/images/tours/tour-3-1.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-2.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-3.jpg"
-                  }
-                ],
-                "gallery": {
-                  "enabled": true
-                },
-                "type": "image"
-            }'
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-1.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-2.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-3.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
                     >
                       <span class="icon-photo-camera-1"></span>
                     </a>
                     <a
-                      href="https://youtu.be/DxBviP18M3w"
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                       class="tour-listing__card-camera-btn video-popup"
                     >
                       <span class="icon-video-camera-1-1"></span>
@@ -680,7 +542,9 @@
                   </div>
                   <!-- /.tour-listing__card-camera-group -->
                   <h3 class="tour-listing__card-title">
-                    <a href="offer-details.html">Georgia</a>
+                    <a href="tour-listing-details-right.html"
+                      >Turkey Balloons flying</a
+                    >
                   </h3>
                   <p class="tour-listing__card-text text-small">
                     There are many variations of passages of Lorem Ipsum
@@ -734,11 +598,15 @@
               </div>
               <!-- /.tour-listing__card -->
             </div>
-            <!-- /.item -->
-            <div class="item">
+            <!-- /.col-xl-4 col-md-6 -->
+            <div
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.3s"
+              data-wow-duration="1500ms"
+            >
               <div class="tour-listing__card">
                 <a
-                  href="offer-details.html"
+                  href="tour-listing-details-right.html"
                   class="tour-listing__card-image-box"
                 >
                   <img
@@ -747,6 +615,12 @@
                     class="tour-listing__card-image"
                   />
                   <div class="tour-listing__card-btn-group">
+                    <div
+                      class="tour-listing__card-discount @@innerExtraClassName"
+                    >
+                      10% Off
+                    </div>
+
                     <div class="tour-listing__card-featured">Featured</div>
                   </div>
                   <!-- /.tour-listing__card-btn-group -->
@@ -764,27 +638,27 @@
                       href="javascript:void(0);"
                       class="tour-listing__card-camera-btn heygruzja-image-popup"
                       data-gallery-options='{
-                "items": [
-                  {
-                    "src": "assets/images/tours/tour-3-2.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-3.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-4.jpg"
-                  }
-                ],
-                "gallery": {
-                  "enabled": true
-                },
-                "type": "image"
-            }'
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-2.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-3.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-4.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
                     >
                       <span class="icon-photo-camera-1"></span>
                     </a>
                     <a
-                      href="https://youtu.be/DxBviP18M3w"
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                       class="tour-listing__card-camera-btn video-popup"
                     >
                       <span class="icon-video-camera-1-1"></span>
@@ -792,7 +666,9 @@
                   </div>
                   <!-- /.tour-listing__card-camera-group -->
                   <h3 class="tour-listing__card-title">
-                    <a href="offer-details.html">Georgia</a>
+                    <a href="tour-listing-details-right.html"
+                      >Moscow Red City Land</a
+                    >
                   </h3>
                   <p class="tour-listing__card-text text-small">
                     There are many variations of passages of Lorem Ipsum
@@ -846,11 +722,15 @@
               </div>
               <!-- /.tour-listing__card -->
             </div>
-            <!-- /.item -->
-            <div class="item">
+            <!-- /.col-xl-4 col-md-6 -->
+            <div
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.5s"
+              data-wow-duration="1500ms"
+            >
               <div class="tour-listing__card">
                 <a
-                  href="offer-details.html"
+                  href="tour-listing-details-right.html"
                   class="tour-listing__card-image-box"
                 >
                   <img
@@ -858,7 +738,15 @@
                     alt="assets/images/tours/tour-3-3.jpg"
                     class="tour-listing__card-image"
                   />
-                  <div class="tour-listing__card-btn-group"></div>
+                  <div class="tour-listing__card-btn-group">
+                    <div
+                      class="tour-listing__card-discount @@innerExtraClassName"
+                    >
+                      10% Off
+                    </div>
+
+                    <div class="tour-listing__card-featured">Featured</div>
+                  </div>
                   <!-- /.tour-listing__card-btn-group -->
                   <div class="tour-listing__card-image-overlay"></div>
                   <!-- /.tour-listing__card-image-overlay --> </a
@@ -874,27 +762,27 @@
                       href="javascript:void(0);"
                       class="tour-listing__card-camera-btn heygruzja-image-popup"
                       data-gallery-options='{
-                "items": [
-                  {
-                    "src": "assets/images/tours/tour-3-3.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-4.jpg"
-                  },
-                  {
-                    "src": "assets/images/tours/tour-3-5.jpg"
-                  }
-                ],
-                "gallery": {
-                  "enabled": true
-                },
-                "type": "image"
-            }'
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-3.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-4.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-5.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
                     >
                       <span class="icon-photo-camera-1"></span>
                     </a>
                     <a
-                      href="https://youtu.be/DxBviP18M3w"
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                       class="tour-listing__card-camera-btn video-popup"
                     >
                       <span class="icon-video-camera-1-1"></span>
@@ -902,7 +790,9 @@
                   </div>
                   <!-- /.tour-listing__card-camera-group -->
                   <h3 class="tour-listing__card-title">
-                    <a href="offer-details.html">Georgia</a>
+                    <a href="tour-listing-details-right.html"
+                      >Turkey Balloons flying</a
+                    >
                   </h3>
                   <p class="tour-listing__card-text text-small">
                     There are many variations of passages of Lorem Ipsum
@@ -956,438 +846,385 @@
               </div>
               <!-- /.tour-listing__card -->
             </div>
-            <!-- /.item -->
+            <!-- /.col-xl-4 col-md-6 -->
+            <div
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1500ms"
+            >
+              <div class="tour-listing__card">
+                <a
+                  href="tour-listing-details-right.html"
+                  class="tour-listing__card-image-box"
+                >
+                  <img
+                    src="assets/images/tours/tour-3-4.jpg"
+                    alt="assets/images/tours/tour-3-4.jpg"
+                    class="tour-listing__card-image"
+                  />
+                  <div class="tour-listing__card-btn-group">
+                    <div
+                      class="tour-listing__card-discount @@innerExtraClassName"
+                    >
+                      10% Off
+                    </div>
+
+                    <div class="tour-listing__card-featured">Featured</div>
+                  </div>
+                  <!-- /.tour-listing__card-btn-group -->
+                  <div class="tour-listing__card-image-overlay"></div>
+                  <!-- /.tour-listing__card-image-overlay --> </a
+                ><!-- /.tour-listing__card-image-box -->
+                <a
+                  href="javascript:void(0);"
+                  class="tour-listing__card-wishlist"
+                  ><span class="icon-heart"></span
+                ></a>
+                <div class="tour-listing__card-content">
+                  <div class="tour-listing__card-camera-group">
+                    <a
+                      href="javascript:void(0);"
+                      class="tour-listing__card-camera-btn heygruzja-image-popup"
+                      data-gallery-options='{
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-4.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-5.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-6.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
+                    >
+                      <span class="icon-photo-camera-1"></span>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                      class="tour-listing__card-camera-btn video-popup"
+                    >
+                      <span class="icon-video-camera-1-1"></span>
+                    </a>
+                  </div>
+                  <!-- /.tour-listing__card-camera-group -->
+                  <h3 class="tour-listing__card-title">
+                    <a href="tour-listing-details-right.html"
+                      >Turkey Balloons flying</a
+                    >
+                  </h3>
+                  <p class="tour-listing__card-text text-small">
+                    There are many variations of passages of Lorem Ipsum
+                    agtilable
+                  </p>
+                  <div class="tour-listing__card-inner-content">
+                    <div class="tour-listing__card-review-box">
+                      <span class="icon-star"></span>
+                      <p class="tour-listing__card-review-text text-small">
+                        4.5 (30 Reviews)
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-review-box -->
+                    <div class="tour-listing__card-location-box">
+                      <span class="icon-location-1"></span>
+                      <p class="tour-listing__card-location-text text-small">
+                        Main Street, Brooklyn, NY
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-location-box -->
+                    <div class="tour-listing__card-divider"></div>
+                    <!-- /.tour-listing__card-divider -->
+                    <div class="tour-listing__card-bottom">
+                      <div class="tour-listing__card-bottom-left">
+                        <div class="tour-listing__card-day">
+                          <span class="icon-clock-1"></span>
+                          <p class="tour-listing__card-day-text text-small">
+                            3 Day
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-day -->
+                        <div class="tour-listing__card-people">
+                          <span class="icon-Duration"></span>
+                          <p class="tour-listing__card-people-text text-small">
+                            12+
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-people -->
+                      </div>
+                      <!-- /.tour-listing__card-bottom-left -->
+                      <div class="tour-listing__card-bottom-right">
+                        <h4 class="tour-listing__card-price">$170</h4>
+                      </div>
+                      <!-- /.tour-listing__card-bottom-right -->
+                    </div>
+                    <!-- /.tour-listing__card-bottom -->
+                  </div>
+                  <!-- /.tour-listing__card-inner-content -->
+                </div>
+                <!-- /.tour-listing__card-content -->
+              </div>
+              <!-- /.tour-listing__card -->
+            </div>
+            <!-- /.col-xl-4 col-md-6 -->
+            <div
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.3s"
+              data-wow-duration="1500ms"
+            >
+              <div class="tour-listing__card">
+                <a
+                  href="tour-listing-details-right.html"
+                  class="tour-listing__card-image-box"
+                >
+                  <img
+                    src="assets/images/tours/tour-3-5.jpg"
+                    alt="assets/images/tours/tour-3-5.jpg"
+                    class="tour-listing__card-image"
+                  />
+                  <div class="tour-listing__card-btn-group">
+                    <div
+                      class="tour-listing__card-discount tour-listing__card-discount-hide"
+                    >
+                      10% Off
+                    </div>
+
+                    <div class="tour-listing__card-featured">Featured</div>
+                  </div>
+                  <!-- /.tour-listing__card-btn-group -->
+                  <div class="tour-listing__card-image-overlay"></div>
+                  <!-- /.tour-listing__card-image-overlay --> </a
+                ><!-- /.tour-listing__card-image-box -->
+                <a
+                  href="javascript:void(0);"
+                  class="tour-listing__card-wishlist"
+                  ><span class="icon-heart"></span
+                ></a>
+                <div class="tour-listing__card-content">
+                  <div class="tour-listing__card-camera-group">
+                    <a
+                      href="javascript:void(0);"
+                      class="tour-listing__card-camera-btn heygruzja-image-popup"
+                      data-gallery-options='{
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-5.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-6.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-1.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
+                    >
+                      <span class="icon-photo-camera-1"></span>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                      class="tour-listing__card-camera-btn video-popup"
+                    >
+                      <span class="icon-video-camera-1-1"></span>
+                    </a>
+                  </div>
+                  <!-- /.tour-listing__card-camera-group -->
+                  <h3 class="tour-listing__card-title">
+                    <a href="tour-listing-details-right.html"
+                      >Discover Depth of Beach</a
+                    >
+                  </h3>
+                  <p class="tour-listing__card-text text-small">
+                    There are many variations of passages of Lorem Ipsum
+                    agtilable
+                  </p>
+                  <div class="tour-listing__card-inner-content">
+                    <div class="tour-listing__card-review-box">
+                      <span class="icon-star"></span>
+                      <p class="tour-listing__card-review-text text-small">
+                        4.5 (30 Reviews)
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-review-box -->
+                    <div class="tour-listing__card-location-box">
+                      <span class="icon-location-1"></span>
+                      <p class="tour-listing__card-location-text text-small">
+                        Main Street, Brooklyn, NY
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-location-box -->
+                    <div class="tour-listing__card-divider"></div>
+                    <!-- /.tour-listing__card-divider -->
+                    <div class="tour-listing__card-bottom">
+                      <div class="tour-listing__card-bottom-left">
+                        <div class="tour-listing__card-day">
+                          <span class="icon-clock-1"></span>
+                          <p class="tour-listing__card-day-text text-small">
+                            3 Day
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-day -->
+                        <div class="tour-listing__card-people">
+                          <span class="icon-Duration"></span>
+                          <p class="tour-listing__card-people-text text-small">
+                            12+
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-people -->
+                      </div>
+                      <!-- /.tour-listing__card-bottom-left -->
+                      <div class="tour-listing__card-bottom-right">
+                        <h4 class="tour-listing__card-price">$190</h4>
+                      </div>
+                      <!-- /.tour-listing__card-bottom-right -->
+                    </div>
+                    <!-- /.tour-listing__card-bottom -->
+                  </div>
+                  <!-- /.tour-listing__card-inner-content -->
+                </div>
+                <!-- /.tour-listing__card-content -->
+              </div>
+              <!-- /.tour-listing__card -->
+            </div>
+            <!-- /.col-xl-4 col-md-6 -->
+            <div
+              class="col-xl-4 col-md-6 wow animated fadeInUp"
+              data-wow-delay="0.5s"
+              data-wow-duration="1500ms"
+            >
+              <div class="tour-listing__card">
+                <a
+                  href="tour-listing-details-right.html"
+                  class="tour-listing__card-image-box"
+                >
+                  <img
+                    src="assets/images/tours/tour-3-6.jpg"
+                    alt="assets/images/tours/tour-3-6.jpg"
+                    class="tour-listing__card-image"
+                  />
+                  <div class="tour-listing__card-btn-group">
+                    <div
+                      class="tour-listing__card-discount tour-listing__card-discount-hide"
+                    >
+                      10% Off
+                    </div>
+
+                    <div class="tour-listing__card-featured">Featured</div>
+                  </div>
+                  <!-- /.tour-listing__card-btn-group -->
+                  <div class="tour-listing__card-image-overlay"></div>
+                  <!-- /.tour-listing__card-image-overlay --> </a
+                ><!-- /.tour-listing__card-image-box -->
+                <a
+                  href="javascript:void(0);"
+                  class="tour-listing__card-wishlist"
+                  ><span class="icon-heart"></span
+                ></a>
+                <div class="tour-listing__card-content">
+                  <div class="tour-listing__card-camera-group">
+                    <a
+                      href="javascript:void(0);"
+                      class="tour-listing__card-camera-btn heygruzja-image-popup"
+                      data-gallery-options='{
+            "items": [
+              {
+                "src": "assets/images/tours/tour-3-6.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-1.jpg"
+              },
+              {
+                "src": "assets/images/tours/tour-3-2.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'
+                    >
+                      <span class="icon-photo-camera-1"></span>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                      class="tour-listing__card-camera-btn video-popup"
+                    >
+                      <span class="icon-video-camera-1-1"></span>
+                    </a>
+                  </div>
+                  <!-- /.tour-listing__card-camera-group -->
+                  <h3 class="tour-listing__card-title">
+                    <a href="tour-listing-details-right.html"
+                      >Turkey Balloons flying</a
+                    >
+                  </h3>
+                  <p class="tour-listing__card-text text-small">
+                    There are many variations of passages of Lorem Ipsum
+                    agtilable
+                  </p>
+                  <div class="tour-listing__card-inner-content">
+                    <div class="tour-listing__card-review-box">
+                      <span class="icon-star"></span>
+                      <p class="tour-listing__card-review-text text-small">
+                        4.5 (30 Reviews)
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-review-box -->
+                    <div class="tour-listing__card-location-box">
+                      <span class="icon-location-1"></span>
+                      <p class="tour-listing__card-location-text text-small">
+                        Main Street, Brooklyn, NY
+                      </p>
+                    </div>
+                    <!-- /.tour-listing__card-location-box -->
+                    <div class="tour-listing__card-divider"></div>
+                    <!-- /.tour-listing__card-divider -->
+                    <div class="tour-listing__card-bottom">
+                      <div class="tour-listing__card-bottom-left">
+                        <div class="tour-listing__card-day">
+                          <span class="icon-clock-1"></span>
+                          <p class="tour-listing__card-day-text text-small">
+                            3 Day
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-day -->
+                        <div class="tour-listing__card-people">
+                          <span class="icon-Duration"></span>
+                          <p class="tour-listing__card-people-text text-small">
+                            12+
+                          </p>
+                        </div>
+                        <!-- /.tour-listing__card-people -->
+                      </div>
+                      <!-- /.tour-listing__card-bottom-left -->
+                      <div class="tour-listing__card-bottom-right">
+                        <h4 class="tour-listing__card-price">$140</h4>
+                      </div>
+                      <!-- /.tour-listing__card-bottom-right -->
+                    </div>
+                    <!-- /.tour-listing__card-bottom -->
+                  </div>
+                  <!-- /.tour-listing__card-inner-content -->
+                </div>
+                <!-- /.tour-listing__card-content -->
+              </div>
+              <!-- /.tour-listing__card -->
+            </div>
+            <!-- /.col-xl-4 col-md-6 -->
           </div>
-          <!-- /.tour-listing-one__carousel -->
+          <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- Tour Listing One End -->
-
-      <!-- Benefit One Start -->
-      <section class="benefit-one">
-        <div class="benefit-one__bg"></div>
-        <!-- /.benefit-bg -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="benefit-one__content">
-                <div class="sec-title text-left">
-                  <p class="sec-title__tagline">GET TO KNOW US</p>
-                  <!-- /.sec-title__tagline -->
-
-                  <h2 class="sec-title__title">
-                    Why You Should Choose Our Company
-                  </h2>
-                  <!-- /.sec-title__title -->
-                </div>
-                <!-- /.sec-title --><!-- /.sec-title -->
-                <h5 class="benefit-one__content__heading">
-                  Best ways to enjoy adventures
-                </h5>
-                <p class="benefit-one__content__text">
-                  There are many variations of passages of Lorem Ipsum simply
-                  free text available, but the majority.
-                </p>
-                <div class="benefit-one__box-wrapper">
-                  <div class="benefit-one__box">
-                    <div class="benefit-one__box__icon">
-                      <span class="icon-airplane-1"></span>
-                    </div>
-                    <h3 class="benefit-one__box__title">
-                      Professional & Certified
-                    </h3>
-                  </div>
-                  <!-- /.benefit-box -->
-                  <div class="benefit-one__box">
-                    <div class="benefit-one__box__icon">
-                      <span class="icon-ticket-1"></span>
-                    </div>
-                    <h3 class="benefit-one__box__title">
-                      Get Instant Tour Bookings
-                    </h3>
-                  </div>
-                  <!-- /.benefit-box -->
-                </div>
-                <a href="about.html" class="heygruzja-btn"
-                  ><span>Discover More</span></a
-                ><!-- /.button -->
-              </div>
-            </div>
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="200ms">
-              <div class="benefit-one__image">
-                <img
-                  src="assets/images/resources/benefit-1-1.jpg"
-                  alt="heygruzja"
-                />
-              </div>
-              <div class="benefit-one__counter">
-                <div class="benefit-one__counter__icon">
-                  <span class="icon-satisfied"></span>
-                </div>
-                <!-- /.counter__icon -->
-                <div class="benefit-one__counter__number count-box">
-                  <span
-                    class="count-text"
-                    data-stop="3800"
-                    data-speed="1500"
-                  ></span>
-                </div>
-                <!-- /.counter__number -->
-                <p class="benefit-one__counter__title">Satisfied Customers</p>
-                <!-- /.counter__title -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Benefit One End -->
-
-      <section class="video-one">
-        <div
-          class="counter-three__bg"
-          style="background-image: url(assets/images/shapes/counter-bg-3.png)"
-        ></div>
-        <!-- /.video-one__bg -->
-        <div class="container">
-          <div
-            class="video-one__content wow fadeInUp animated"
-            data-wow-delay="100ms"
-            style="
-              visibility: visible;
-              animation-delay: 100ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a
-              href="https://www.youtube.com/watch?v=J66QuJfJzqs"
-              class="video-popup"
-              ><i class="fa fa-play"></i
-            ></a>
-            <h5 class="video-one__sub-title">Are you ready to travel?</h5>
-            <!-- /.video-one__sub-title -->
-            <h2 class="video-one__title">Explore Georgia<br /></h2>
-            <!-- /.video-one__title -->
-          </div>
-          <!-- /.video-one__content -->
-        </div>
-        <!-- /.container -->
-      </section>
-
-      <!-- Counter One Start -->
-      <section class="counter-one">
-        <div class="counter-one__bg-box"></div>
-        <!-- /.counter-one__bg-box -->
-        <div class="counter-one__main-content">
-          <div class="container">
-            <div class="counter-one__container container-fluid">
-              <div class="row">
-                <div
-                  class="col-xl-3 col-lg-3 col-6 wow animated fadeInUp"
-                  data-wow-delay="0.1s"
-                  data-wow-duration="1500ms"
-                >
-                  <div class="counter-box @@extraClassName">
-                    <div class="counter-box__icon">
-                      <span class="icon-happy-Travel"></span>
-                    </div>
-                    <!-- /.counter-box__icon -->
-                    <div class="counter-box__inner sec-title count-box">
-                      <h3
-                        class="counter-box__count-text counter-box__count-text--one sec-title__heading count-text"
-                        data-stop="30.3"
-                        data-speed="1500"
-                      >
-                        00
-                      </h3>
-                      <h3 class="counter-box__count-text sec-title__heading">
-                        k
-                      </h3>
-                    </div>
-                    <!-- /.counter-box__inner -->
-                    <p class="counter-box__title">Happy Traveller</p>
-                  </div>
-                </div>
-                <!-- /.col-xl-3 col-lg-3 col-6 -->
-                <div
-                  class="col-xl-3 col-lg-3 col-6 wow animated fadeInUp"
-                  data-wow-delay="0.3s"
-                  data-wow-duration="1500ms"
-                >
-                  <div class="counter-box @@extraClassName">
-                    <div class="counter-box__icon">
-                      <span class="icon-tent-1"></span>
-                    </div>
-                    <!-- /.counter-box__icon -->
-                    <div class="counter-box__inner sec-title count-box">
-                      <h3
-                        class="counter-box__count-text counter-box__count-text--one sec-title__heading count-text"
-                        data-stop="40.5"
-                        data-speed="1500"
-                      >
-                        00
-                      </h3>
-                      <h3 class="counter-box__count-text sec-title__heading">
-                        k
-                      </h3>
-                    </div>
-                    <!-- /.counter-box__inner -->
-                    <p class="counter-box__title">Tent Sites</p>
-                  </div>
-                </div>
-                <!-- /.col-xl-3 col-lg-3 col-6 -->
-                <div
-                  class="col-xl-3 col-lg-3 col-6 wow animated fadeInUp"
-                  data-wow-delay="0.5s"
-                  data-wow-duration="1500ms"
-                >
-                  <div class="counter-box @@extraClassName">
-                    <div class="counter-box__icon">
-                      <span class="icon-satisfied"></span>
-                    </div>
-                    <!-- /.counter-box__icon -->
-                    <div class="counter-box__inner sec-title count-box">
-                      <h3
-                        class="counter-box__count-text counter-box__count-text--one sec-title__heading count-text"
-                        data-stop="88.9"
-                        data-speed="1500"
-                      >
-                        00
-                      </h3>
-                      <h3 class="counter-box__count-text sec-title__heading">
-                        %
-                      </h3>
-                    </div>
-                    <!-- /.counter-box__inner -->
-                    <p class="counter-box__title">Satisfaction Rate</p>
-                  </div>
-                </div>
-                <!-- /.col-xl-3 col-lg-3 col-6 -->
-                <div
-                  class="col-xl-3 col-lg-3 col-6 wow animated fadeInUp"
-                  data-wow-delay="0.7s"
-                  data-wow-duration="1500ms"
-                >
-                  <div class="counter-box counter-box--no-border">
-                    <div class="counter-box__icon">
-                      <span class="icon-online-chat-1"></span>
-                    </div>
-                    <!-- /.counter-box__icon -->
-                    <div class="counter-box__inner sec-title count-box">
-                      <h3
-                        class="counter-box__count-text counter-box__count-text--one sec-title__heading count-text"
-                        data-stop="6.30"
-                        data-speed="1500"
-                      >
-                        00
-                      </h3>
-                      <h3 class="counter-box__count-text sec-title__heading">
-                        +
-                      </h3>
-                    </div>
-                    <!-- /.counter-box__inner -->
-                    <p class="counter-box__title">Year Of Service</p>
-                  </div>
-                </div>
-                <!-- /.col-xl-3 col-lg-3 col-6 -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.counter-one__container container-fluid -->
-          </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.counter-one__main-content -->
-      </section>
-      <!-- Counter One End -->
-      <section class="tour-type">
-        <div
-          class="tour-type__bg"
-          style="background-image: url(assets/images/shapes/tour-type-bg.png)"
-        ></div>
-        <!-- /.tour-type__bg -->
-        <section class="cta-two">
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-lg-9 wow fadeInUp animated"
-                data-wow-delay="100ms"
-                style="
-                  visibility: visible;
-                  animation-delay: 100ms;
-                  animation-name: fadeInUp;
-                "
-              >
-                <h5 class="cta-two__sub-title">Book Your Trip Now</h5>
-                <h3 class="cta-two__title">
-                  Are You Ready to Travel &amp; Enjoy
-                </h3>
-              </div>
-              <div
-                class="col-lg-3 cta-two__btn wow fadeInUp animated"
-                data-wow-delay="200ms"
-                style="
-                  visibility: visible;
-                  animation-delay: 200ms;
-                  animation-name: fadeInUp;
-                "
-              >
-                <a href="tours.html" class="heygruzja-btn"
-                  ><span>Explore Offers</span></a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- /.container -->
-        </section>
-        <!-- /.container -->
-      </section>
-      <!-- /.client-carousel -->
-      <section class="gallery-one">
-        <div class="container">
-          <div
-            class="gallery-one__carousel heygruzja-owl__carousel heygruzja-owl__carousel--basic-nav owl-carousel"
-            data-owl-options='{
-			"loop": true,
-			"items": 5,
-			"autoplay": true,
-			"smartSpeed": 600,
-			"nav": false,
-			"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-			"dots": true,
-			"margin": 10,
-			"responsive": {
-				"0": {
-					"items": 1
-				},
-				"576": {
-					"items": 2
-				},
-				"992": {
-					"items": 3
-				},
-				"1200": {
-					"items": 4
-				},
-				"1400": {
-					"items": 5
-				}
-			}
-			}'
-          >
-            <div class="item">
-              <div class="gallery-single">
-                <div class="gallery-single__img-box">
-                  <img
-                    src="assets/images/gallery/gallery-1-1.jpg"
-                    alt="gallery"
-                    class="gallery-single__img"
-                  />
-                  <div class="gallery-single__overlay">
-                    <a
-                      href="assets/images/gallery/gallery-1-1.jpg"
-                      class="gallery-single__btn heygruzja-btn heygruzja-btn--base-three img-popup"
-                      ><span class="icon-plus"></span
-                    ></a>
-                  </div>
-                  <!-- /.gallery-single__overlay -->
-                </div>
-                <!-- /.gallery-single__img-box -->
-              </div>
-              <!-- /.gallery-single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="gallery-single">
-                <div class="gallery-single__img-box">
-                  <img
-                    src="assets/images/gallery/gallery-1-2.jpg"
-                    alt="gallery"
-                    class="gallery-single__img"
-                  />
-                  <div class="gallery-single__overlay">
-                    <a
-                      href="assets/images/gallery/gallery-1-2.jpg"
-                      class="gallery-single__btn heygruzja-btn heygruzja-btn--base-three img-popup"
-                      ><span class="icon-plus"></span
-                    ></a>
-                  </div>
-                  <!-- /.gallery-single__overlay -->
-                </div>
-                <!-- /.gallery-single__img-box -->
-              </div>
-              <!-- /.gallery-single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="gallery-single">
-                <div class="gallery-single__img-box">
-                  <img
-                    src="assets/images/gallery/gallery-1-3.jpg"
-                    alt="gallery"
-                    class="gallery-single__img"
-                  />
-                  <div class="gallery-single__overlay">
-                    <a
-                      href="assets/images/gallery/gallery-1-3.jpg"
-                      class="gallery-single__btn heygruzja-btn heygruzja-btn--base-three img-popup"
-                      ><span class="icon-plus"></span
-                    ></a>
-                  </div>
-                  <!-- /.gallery-single__overlay -->
-                </div>
-                <!-- /.gallery-single__img-box -->
-              </div>
-              <!-- /.gallery-single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="gallery-single">
-                <div class="gallery-single__img-box">
-                  <img
-                    src="assets/images/gallery/gallery-1-4.jpg"
-                    alt="gallery"
-                    class="gallery-single__img"
-                  />
-                  <div class="gallery-single__overlay">
-                    <a
-                      href="assets/images/gallery/gallery-1-4.jpg"
-                      class="gallery-single__btn heygruzja-btn heygruzja-btn--base-three img-popup"
-                      ><span class="icon-plus"></span
-                    ></a>
-                  </div>
-                  <!-- /.gallery-single__overlay -->
-                </div>
-                <!-- /.gallery-single__img-box -->
-              </div>
-              <!-- /.gallery-single -->
-            </div>
-            <!-- /.item -->
-            <div class="item">
-              <div class="gallery-single">
-                <div class="gallery-single__img-box">
-                  <img
-                    src="assets/images/gallery/gallery-1-5.jpg"
-                    alt="gallery"
-                    class="gallery-single__img"
-                  />
-                  <div class="gallery-single__overlay">
-                    <a
-                      href="assets/images/gallery/gallery-1-5.jpg"
-                      class="gallery-single__btn heygruzja-btn heygruzja-btn--base-three img-popup"
-                      ><span class="icon-plus"></span
-                    ></a>
-                  </div>
-                  <!-- /.gallery-single__overlay -->
-                </div>
-                <!-- /.gallery-single__img-box -->
-              </div>
-              <!-- /.gallery-single -->
-            </div>
-            <!-- /.item -->
-          </div>
-        </div>
-      </section>
+      <!-- Tour Listing Search Page One End -->
 
       <footer class="main-footer @@extraClassName">
         <div
@@ -1553,7 +1390,7 @@
           <div class="container">
             <div class="main-footer__bottom-inner">
               <p class="main-footer__copyright">
-                &copy; Copyright <span class="dynamic-year"></span> by HEY
+                &copy; Copyright <span class="dynamic-year"></span> By HEY
                 GRUZJA
               </p>
             </div>
@@ -1577,7 +1414,7 @@
 
         <div class="logo-box">
           <a href="index.html" aria-label="logo image"
-            ><img src="assets/images/logo-dark.svg" width="60" alt=""
+            ><img src="assets/images/logo-dark.png" width="155" alt=""
           /></a>
         </div>
         <!-- /.logo-box -->
