@@ -13583,6 +13583,7 @@ body.megamenu-popup-active .mobile-nav__content {
 @media (max-width: 991px) {
   .benefit-one__image img {
     max-width: 100%;
+    height: auto;
   }
 }
 .benefit-one__counter {
