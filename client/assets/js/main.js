@@ -31,14 +31,14 @@
   }
 
   // Date Picker
-  if ($(".heygruzja-datepicker").length) {
-    $(".heygruzja-datepicker").each(function () {
+  if ($(".hejgruzja-datepicker").length) {
+    $(".hejgruzja-datepicker").each(function () {
       $(this).datepicker();
     });
   }
   // Multi Date Picker
-  if ($(".heygruzja-multi-datepicker").length) {
-    $(".heygruzja-multi-datepicker").each(function () {
+  if ($(".hejgruzja-multi-datepicker").length) {
+    $(".hejgruzja-multi-datepicker").each(function () {
       let self = $(this);
       self.daterangepicker({
         autoUpdateInput: false,
@@ -246,8 +246,8 @@
     });
   }
 
-  let heygruzjaImagePopupGallery = $(".heygruzja-image-popup");
-  heygruzjaImagePopupGallery.each(function () {
+  let hejgruzjaImagePopupGallery = $(".hejgruzja-image-popup");
+  hejgruzjaImagePopupGallery.each(function () {
     let elm = $(this);
     let options = elm.data("gallery-options");
     let imageGallery = elm.magnificPopup(
@@ -380,26 +380,26 @@
   }
 
   /*-- Hover Tilt --*/
-  let heygruzjaTiltElm = $(".heygruzja-tilt");
-  if (heygruzjaTiltElm.length) {
-    heygruzjaTiltElm.each(function () {
+  let hejgruzjaTiltElm = $(".hejgruzja-tilt");
+  if (hejgruzjaTiltElm.length) {
+    hejgruzjaTiltElm.each(function () {
       let self = $(this);
       let options = self.data("tilt-options");
-      let heygruzjaTilt = self.tilt(
+      let hejgruzjaTilt = self.tilt(
         "object" === typeof options ? options : JSON.parse(options)
       );
     });
   }
 
-  function heygruzjaPara() {
-    let heygruzjaParaElm = $(".heygruzja-splax");
-    if (heygruzjaParaElm.length) {
-      heygruzjaParaElm.each(function () {
+  function hejgruzjaPara() {
+    let hejgruzjaParaElm = $(".hejgruzja-splax");
+    if (hejgruzjaParaElm.length) {
+      hejgruzjaParaElm.each(function () {
         let self = $(this);
         let className = self.attr("class");
         var image = document.getElementsByClassName(className);
         let options = self.data("para-options");
-        let heygruzjaPara = new simpleParallax(
+        let hejgruzjaPara = new simpleParallax(
           image,
           "object" === typeof options ? options : JSON.parse(options)
         );
@@ -421,8 +421,8 @@
   }
 
   //accrodion
-  if ($(".heygruzja-accrodion").length) {
-    var accrodionGrp = $(".heygruzja-accrodion");
+  if ($(".hejgruzja-accrodion").length) {
+    var accrodionGrp = $(".hejgruzja-accrodion");
     accrodionGrp.each(function () {
       var accrodionName = $(this).data("grp-name");
       var Self = $(this);
@@ -435,10 +435,10 @@
           .find(".accrodion-title")
           .on("click", function () {
             if ($(this).parent().hasClass("active") === false) {
-              $(".heygruzja-accrodion." + accrodionName)
+              $(".hejgruzja-accrodion." + accrodionName)
                 .find(".accrodion")
                 .removeClass("active");
-              $(".heygruzja-accrodion." + accrodionName)
+              $(".hejgruzja-accrodion." + accrodionName)
                 .find(".accrodion")
                 .find(".accrodion-content")
                 .slideUp();
@@ -522,9 +522,9 @@
 
   function thmOwlInit() {
     // owl slider
-    let heygruzjaowlCarousel = $(".heygruzja-owl__carousel");
-    if (heygruzjaowlCarousel.length) {
-      heygruzjaowlCarousel.each(function () {
+    let hejgruzjaowlCarousel = $(".hejgruzja-owl__carousel");
+    if (hejgruzjaowlCarousel.length) {
+      hejgruzjaowlCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
@@ -535,9 +535,9 @@
         });
       });
     }
-    let heygruzjaowlCarouselNav = $(".heygruzja-owl__carousel--custom-nav");
-    if (heygruzjaowlCarouselNav.length) {
-      heygruzjaowlCarouselNav.each(function () {
+    let hejgruzjaowlCarouselNav = $(".hejgruzja-owl__carousel--custom-nav");
+    if (hejgruzjaowlCarouselNav.length) {
+      hejgruzjaowlCarouselNav.each(function () {
         let elm = $(this);
         let owlNavPrev = elm.data("owl-nav-prev");
         let owlNavNext = elm.data("owl-nav-next");
@@ -665,9 +665,9 @@
   stickyMenuUpScroll($(".sticky-header--normal"), "active");
 
   //Strech Column
-  function heygruzja_stretch() {
+  function hejgruzja_stretch() {
     var i = $(window).width();
-    $(".row .heygruzja-stretch-element-inside-column").each(function () {
+    $(".row .hejgruzja-stretch-element-inside-column").each(function () {
       var $this = $(this),
         row = $this.closest(".row"),
         cols = $this.closest('[class^="col-"]'),
@@ -696,9 +696,9 @@
       $this.css(styles);
     });
   }
-  heygruzja_stretch();
+  hejgruzja_stretch();
 
-  function heygruzja_cuved_circle() {
+  function hejgruzja_cuved_circle() {
     let circleTypeElm = $(".curved-circle--item");
     if (circleTypeElm.length) {
       circleTypeElm.each(function () {
@@ -711,7 +711,7 @@
     }
   }
 
-  let reviewStarElm = $(".heygruzja-ratings-two");
+  let reviewStarElm = $(".hejgruzja-ratings-two");
   if (reviewStarElm.length) {
     reviewStarElm
       .find("i")
@@ -831,7 +831,7 @@
     thmOwlInit();
     thmTinyInit();
     priceFilter();
-    heygruzjaPara();
+    hejgruzjaPara();
 
     if ($(".circle-progress").length) {
       $(".circle-progress").appear(function () {
@@ -902,7 +902,7 @@
       });
     }
 
-    heygruzja_cuved_circle();
+    hejgruzja_cuved_circle();
   });
 
   $(window).on("scroll", function () {
@@ -929,6 +929,6 @@
   });
 
   $(window).on("resize", function () {
-    heygruzja_stretch();
+    hejgruzja_stretch();
   });
 })(jQuery);
